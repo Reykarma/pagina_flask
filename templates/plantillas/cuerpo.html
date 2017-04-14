@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/cuerpo.css') }}">
+  </head>
+  <body>
+    <div id="cabeza">
+      <div id="logo">
+
+      </div>
+      <div id="controles">
+		<ul id="categorias">
+      <li><b><a href="/">INICIO</a></b></li>
+			<li><b><a href="/">Editores de video</a></b></li>
+			<li><b><a href="/">Editores de imagen</a></b></li>
+			<li><b><a href="/">Ofimática</a></b></li>
+			<li><b><a href="/">Distribuciones</a></b></li>
+		</ul>
+    </div>
+    </div>
+    <div id="cuerpo">
+      <div id="contenido">
+        {%block contenido%}
+
+        {%endblock%}
+      </div>
+    </div>
+  </body>
+</html>

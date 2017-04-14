@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/administrador.css') }}">
+  </head>
+  <body>
+    <div id="cuerpo">
+      <div id="login">
+        <form id="Login" action="#" method="post">
+          <table>
+            <tr>
+              <td><label for="usuario"><b>INICIAR SESION</b><br/></label></td>
+            </tr>
+            <tr>
+              <td><input type="text" name="usuario" id="usuario" placeholder="Clave de administrador" required></td>
+            </tr>
+            <tr>
+                <td><input type="password" name="contraseña" id="contraseña" placeholder="Constraseña" required></td>
+            </tr>
+            <tr>
+              <td><input type="submit" name="aceptar" id="aceptar" value="Aceptar"></td>
+            </tr>
+          </table>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
