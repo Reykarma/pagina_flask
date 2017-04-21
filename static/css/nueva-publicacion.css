@@ -1,0 +1,26 @@
+#publicar{
+  margin: 0 auto;
+  align-items: center;
+}
+
+.botones{
+  margin: 0 auto;
+}
+
+.boton{
+  width: 100px;
+  height: 30px;
+}
+
+#cke_publicacion{
+	position: block;
+}
+
+#tema{
+  width: 150px;
+  height: 30px;
+}
+#titulo{
+  height: 20px;
+  width: 200px;
+}

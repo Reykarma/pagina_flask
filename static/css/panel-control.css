@@ -1,0 +1,62 @@
+body{
+background-color: #e3e3e3;
+}
+
+#contenido{
+  width: 950px;
+  margin: 0 auto;
+  height: 700px;
+  border: 1px solid #ccc;
+}
+
+#cabeza{
+  width: 100%;
+  height: 80px;
+border: 2px solid #ccc;
+background-color:  rgb(194, 124, 4);
+}
+
+    #logo{
+    float: left;
+    width: 20%;
+    height: 80px;
+    }
+
+    #controles{
+			float: left;
+			width:80%;
+     height: 80px;
+		 align-items: center;
+		}
+
+	#acciones{
+		margin: 0 auto;
+		margin-top: 30px;
+		display: block;
+		list-style: none;
+	}
+
+	#acciones li{
+    margin-left: 60px;
+   display: block;
+	 	float: left;
+	}
+
+	#acciones li a{
+		position: relative;
+		padding: 12px;
+		text-decoration: none;
+		color: white;
+	}
+
+	#acciones li a:hover{
+    border-radius: 1px;
+		background: #3096B6;
+		/*border: 0.2px solid #ccc;*/
+	}
+
+#cuerpo{
+  margin-top: 10px;
+  width: 100%;
+  border: 1px solid #ccc;
+}

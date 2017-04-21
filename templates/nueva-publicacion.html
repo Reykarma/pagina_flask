@@ -1,0 +1,28 @@
+{% extends 'plantillas/Panel-control.html'%}
+
+{%block contenido%}
+<script type="text/javascript" src="{{ url_for('static', filename='ckeditor/ckeditor.js') }}"></script>
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/nueva-publicacion.css') }}">
+
+<div id="publicar">
+	<form action="/addnew" method="POST">
+		<label>Titulo:</label>
+		<input type="text" id="titulo" name="titulo">
+		<select id="tema" name="tema">
+			<option value="--">---</option>
+			<option value="Editores_de_video">Editores de video</option>
+			<option value="Editores_de_imagen">Editores de imagen</option>
+			<option value="Ofimatica">Ofimatica</option>
+			<option value="Distribuciones">Distribuciones</option>
+		</select>
+		<textarea id="publicacion" name="publicacion"></textarea><br><br>
+     	<script>
+     		CKEDITOR.replace( 'publicacion' );
+		</script>
+		 <div class="botones">
+		 	<input type="submit" value="Publicar" class="boton">
+		 </div>
+	</form>
+</div>
+
+{%endblock%}

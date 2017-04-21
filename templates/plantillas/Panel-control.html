@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/panel-control.css') }}">
+  </head>
+  <body>
+    <div id="cabeza">
+      <div id="logo">
+
+      </div>
+      <div id="controles">
+		<ul id="acciones">
+      <li><b><a href="/nueva">Nueva Publicacion</a></b></li>
+			<li><b><a href="/">Modificar Publicacion</a></b></li>
+			<li><b><a href="/">Eliminar Publicacion</a></b></li>
+
+		</ul>
+    </div>
+    </div>
+    <div id="cuerpo">
+      <div id="contenido">
+        {%block contenido%}
+
+        {%endblock%}
+      </div>
+    </div>
+  </body>
+</html>

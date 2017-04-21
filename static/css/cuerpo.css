@@ -61,3 +61,6 @@ background-color:  #67417e;
   width: 100%;
   border: 1px solid #ccc;
 }
+#contenido{
+  align-items: center;
+}

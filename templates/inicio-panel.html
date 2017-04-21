@@ -1,0 +1,11 @@
+{% extends 'plantillas/Panel-control.html'%}
+
+{%block contenido%}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/inicio-panel.css') }}">
+
+<div id="cartel">
+  <h1><p>Panel de Control</p></h1>
+  <h2><p>Bienvenido</p></h2>
+  <h2><p>{{usuario}}</p></h2>
+</div>
+{%endblock%}
