@@ -5,9 +5,9 @@
 	<link rel="stylesheet" href="{{ url_for('static', filename='css/nueva-publicacion.css') }}">
 
 <div id="publicar">
-	<form action="/addnew" method="POST">
+	<form action="/update?id={{id}}" method="POST">
 		<label>Titulo:</label>
-		<input type="text" id="titulo" name="titulo">
+		<input type="text" id="titulo" name="titulo" value="{{titulo}}">
 		<select id="tema" name="tema">
 			<option value="--">---</option>
 			<option value="Editores_de_video">Editores de video</option>
@@ -15,12 +15,12 @@
 			<option value="Ofimatica">Ofimatica</option>
 			<option value="Distribuciones">Distribuciones</option>
 		</select>
-		<textarea id="publicacion" name="publicacion" ></textarea><br><br>
+		<textarea id="publicacion" name="publicacion" >{{cuerpo | safe}}</textarea><br><br>
      	<script>
      		CKEDITOR.replace( 'publicacion' );
 		</script>
 		 <div class="botones">
-		 	<input type="submit" value="Publicar" class="boton">
+		 	<input type="submit" value="Actualizar" class="boton">
 		 </div>
 	</form>
 </div>

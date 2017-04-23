@@ -1,0 +1,22 @@
+{% extends 'plantillas/Panel-control.html'%}
+{%block contenido%}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/Modificar-publicaciones.css') }}">
+<div id="buscar">
+  <form action="/modifi-read" method="POST">
+		<select id="tema" name="tema">
+			<option value="--">---</option>
+			<option value="Editores_de_video">Editores de video</option>
+			<option value="Editores_de_imagen">Editores de imagen</option>
+			<option value="Ofimatica">Ofimatica</option>
+			<option value="Distribuciones">Distribuciones</option>
+		</select>
+    <input type="submit" value="Buscar" class="boton">
+</form>
+</div>
+{%for a in categoria%}
+<div id="publicaciones">
+  <a  href="/Edit?publicacion={{a[0]}}"><b>{{a[2]}}</b></a>
+  <p>{{a[3][:200] | safe}}</p>
+</div>
+{%endfor%}
+{%endblock%}

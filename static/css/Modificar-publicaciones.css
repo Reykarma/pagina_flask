@@ -1,0 +1,14 @@
+#buscar{
+  width: 200px;
+  margin: 0 auto;
+}
+
+#publicaciones{
+  width: 400px;
+  height: 250px;
+  border: 1px solid #ccc;
+  margin-top: 15px;
+  margin-left: 47px;
+  float: left;
+  text-align: center;
+}

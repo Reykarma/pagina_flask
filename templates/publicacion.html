@@ -1,0 +1,13 @@
+{% extends 'plantillas/cuerpo.html'%}
+
+{%block contenido%}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/publicacion.css') }}">
+{%for a in publicacion%}
+<div id="Titulo">
+<h3><b>{{a[2]}}</b></h3>
+</div>
+<div id="cuerpo">
+  {{a[3] | safe}}
+</div>
+{%endfor%}
+{%endblock%}
